@@ -4,12 +4,12 @@ I really have no interest in updating my DX9 base, so I figured it would probabl
 
 ## Features
 
-✅ XenForo authentication (returning highest rank with the default login.php)
-✅ DragonByte support (returning all licenses; license id, product id and expiry date with the DragonByte login.php file)
-✅ Color schemes readded to DX11 base; + remembers last color
-✅ TLS/SSL encryption
-✅ Medium protection against SQL injections
-✅ DX11
-❌ Using returned data to display it
+✅ XenForo authentication (returning highest rank with the default login.php)  
+✅ DragonByte support (returning all licenses; license id, product id and expiry date with the DragonByte login.php file)  
+✅ Color schemes readded to DX11 base; + remembers last color  
+✅ TLS/SSL encryption  
+✅ Medium protection against SQL injections  
+✅ DX11  
+❌ Using returned data to display it  
 
 I'll update the README later
