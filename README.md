@@ -18,6 +18,16 @@ I really have no interest in updating my DX9 base, so I figured it would probabl
 
 2. And I recommend using vcpkg for installing necessary static/dynamic libraries (json.h and curl.h)
 
+```
+// Dynamic libraries
+/vcpkg install curl:x64-windows 
+/vcpkg install jsoncpp:x64-windows
+
+// Static libraries (use these if you want the program file to work anywhere on the PC)
+/vcpkg install curl:x64-windows-static
+/vcpkg install jsoncpp:x64-windows-static
+```
+
 3. Also make sure to add these lines to ".htaccess" file (necessary to work):
 
 ```
