@@ -16,7 +16,7 @@ I really have no interest in updating my DX9 base, so I figured it would probabl
 
 1. Make sure to have DirectX SDK installed
 
-2. And I recommend using vcpkg for installing necessary static/dynamic libraries (json.h and curl.h)
+2. And I recommend using vcpkg for installing necessary static/dynamic libraries (json.h and curl.h) at the moment the project is using dynamic libraries, but its easy to change, just go and edit the settings under "vcpkg" in project settings.
 
 ```
 // Dynamic libraries
