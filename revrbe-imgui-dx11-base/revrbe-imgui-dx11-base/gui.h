@@ -27,7 +27,7 @@ public:
 
 	const ImVec2 window_pos{ 0, 0 };
 	const ImVec2 window_size{ 400, 300 };
-	const ImVec2 background{ 398, 298 };
+	const ImVec2 background{ 401, 301 };
 
 	bool loginFailed = false;
 	bool drawLogin = true;
