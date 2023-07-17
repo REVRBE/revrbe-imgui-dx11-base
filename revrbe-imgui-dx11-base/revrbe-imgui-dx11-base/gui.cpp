@@ -149,7 +149,10 @@ void GUI::DrawInterface(HWND hwnd)
                 ImGui::Text(magiXOR("Info").decrypt());
             }
             else {
-                ImGui::Text(magiXOR("Menu").decrypt());
+                ImGui::Text(magiXOR("Hi, %s!").decrypt(), GUI::user_name);
+                ImGui::Text(magiXOR("Rank: %s").decrypt(), user_rank);
+                
+                // I will add licenses(product id, license id and expiry date) later
             }
         }
         ImGui::EndChild();
