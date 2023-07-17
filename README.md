@@ -2,6 +2,10 @@
 
 I really have no interest in updating my DX9 base, so I figured it would probably be better to release one for DX11 - hopefully with future updates to improve and/or add new stuff.
 
+## Updates
+
+I added a simple interface that is displayed on successful login. 
+
 ## Features
 
 ✅ XenForo authentication (returning highest rank with the default login.php)  
@@ -51,4 +55,12 @@ CREATE TABLE xf_login_attempts (
 );
 ```
 
-I'll finish the README later
+## Ways to avoid database breach
+
+Use a secure database password (it can be up to 128 characters - maybe even change it regularly)
+
+Use a reliable/secure web-hosting
+
+Add/make a script that notifies you with a mail to your personel/work mail-address when something fishy is going on in the database, so you can react quickly.
+
+If you really want to go all-in, then look up Cloudflare WAF
