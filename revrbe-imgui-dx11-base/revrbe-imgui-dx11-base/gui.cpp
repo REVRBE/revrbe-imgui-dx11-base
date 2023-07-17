@@ -121,7 +121,7 @@ void GUI::DrawInterface(HWND hwnd)
         ImVec2 childPos(ImGui::GetWindowPos().x + 15.0f, ImGui::GetWindowPos().y + 15.0f);
         ImVec2 childSize(imageWidth + 3.0f, imageHeight + 3.0f);
 
-        ImGui::BeginChild("ChildWindow", childSize, true, ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse);
+        ImGui::BeginChild(magiXOR("ChildWindow").decrypt(), childSize, true, ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse);
         {
             ImVec2 imagePos((childSize.x - imageWidth) * 0.5f, (childSize.y - imageHeight) * 0.5f - 5);
             ImGui::SetCursorPos(imagePos);
@@ -134,7 +134,7 @@ void GUI::DrawInterface(HWND hwnd)
         float rightChildWidth = ImGui::GetContentRegionAvail().x;
         float rightChildHeight = ImGui::GetContentRegionAvail().y;
 
-        ImGui::BeginChild("RightChildWindow", ImVec2(rightChildWidth, rightChildHeight), true);
+        ImGui::BeginChild(magiXOR("RightChildWindow").decrypt(), ImVec2(rightChildWidth, rightChildHeight), true);
         {
             if (state == 1)
             {
