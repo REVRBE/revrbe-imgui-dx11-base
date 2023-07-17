@@ -16,6 +16,7 @@ class GUI final
 public:
 	void Draw(HWND hwnd);
 	void DrawLoginInterface(HWND hwnd);
+	void DrawInterface(HWND hwnd);
 	void ApplyColorScheme(const char* colorScheme);
 
 	enum class ColorScheme {
@@ -30,7 +31,7 @@ public:
 
 	bool loginFailed = false;
 	bool drawLogin = true;
-	bool drawRegister = false;
+	bool drawInterface = false;
 
 private:
 	bool active = true;
