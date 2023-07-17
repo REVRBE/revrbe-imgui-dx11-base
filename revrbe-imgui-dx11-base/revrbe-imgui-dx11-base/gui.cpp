@@ -121,7 +121,7 @@ void GUI::DrawInterface(HWND hwnd)
         ImVec2 childPos(ImGui::GetWindowPos().x + 15.0f, ImGui::GetWindowPos().y + 15.0f);
         ImVec2 childSize(imageWidth + 3.0f, imageHeight + 3.0f);
 
-        ImGui::BeginChild("ChildWindow", childSize, false, ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse);
+        ImGui::BeginChild("ChildWindow", childSize, true, ImGuiWindowFlags_NoScrollbar | ImGuiWindowFlags_NoScrollWithMouse);
         {
             ImVec2 imagePos((childSize.x - imageWidth) * 0.5f, (childSize.y - imageHeight) * 0.5f - 5);
             ImGui::SetCursorPos(imagePos);
@@ -188,7 +188,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.70f, 0.70f, 0.70f, 1.00f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.16f, 0.16f, 0.16f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.26f, 0.26f, 0.26f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.40f, 0.40f, 0.40f, 0.78f);
@@ -228,7 +227,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.86f, 0.93f, 0.89f, 0.28f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.13f, 0.14f, 0.17f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.20f, 0.22f, 0.27f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.92f, 0.18f, 0.29f, 0.78f);
@@ -269,7 +267,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.76f, 0.93f, 0.78f, 0.28f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.13f, 0.14f, 0.17f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.20f, 0.22f, 0.27f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.18f, 0.92f, 0.29f, 0.78f);
@@ -310,7 +307,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.85f, 0.92f, 0.95f, 0.28f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.10f, 0.18f, 0.23f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.20f, 0.32f, 0.42f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.44f, 0.60f, 0.75f, 0.78f);
@@ -351,7 +347,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.88f, 0.84f, 0.96f, 0.28f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.17f, 0.12f, 0.24f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.30f, 0.20f, 0.40f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.84f, 0.36f, 0.14f, 0.78f);
@@ -392,7 +387,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.50f, 0.50f, 0.50f, 0.28f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.10f, 0.10f, 0.10f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.18f, 0.18f, 0.18f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.22f, 0.22f, 0.22f, 0.78f);
@@ -433,7 +427,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.65f, 0.65f, 0.65f, 1.00f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.13f, 0.13f, 0.13f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.25f, 0.25f, 0.25f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.58f, 0.70f, 0.39f, 0.78f);
@@ -474,7 +467,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.70f, 0.70f, 0.70f, 1.00f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.25f, 0.30f, 0.40f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.35f, 0.45f, 0.55f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.50f, 0.60f, 0.70f, 0.78f);
@@ -514,7 +506,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.50f, 0.50f, 0.50f, 1.00f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.10f, 0.10f, 0.10f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.15f, 0.15f, 0.15f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.30f, 0.30f, 0.30f, 0.78f);
@@ -554,7 +545,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.85f, 0.92f, 0.88f, 0.28f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.05f, 0.11f, 0.15f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f); 
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.14f, 0.24f, 0.27f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.44f, 0.73f, 0.69f, 0.78f);
@@ -595,7 +585,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.88f, 0.84f, 0.96f, 0.28f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.15f, 0.18f, 0.12f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.40f, 0.30f, 0.50f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.96f, 0.84f, 0.29f, 0.78f);
@@ -636,7 +625,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.54f, 0.54f, 0.54f, 1.00f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.22f, 0.22f, 0.22f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.35f, 0.35f, 0.35f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.48f, 0.48f, 0.48f, 0.78f);
@@ -673,7 +661,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.50f, 0.50f, 0.50f, 1.00f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.98f, 0.98f, 0.98f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.85f, 0.85f, 0.85f, 1.00f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.75f, 0.75f, 0.75f, 1.00f);
@@ -714,7 +701,6 @@ void GUI::ApplyColorScheme(const char* colorScheme) {
         style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.60f, 0.60f, 0.60f, 1.00f);
         style.Colors[ImGuiCol_WindowBg] = ImVec4(0.07f, 0.15f, 0.29f, 1.00f);
         style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.13f);
-        style.Colors[ImGuiCol_ChildBg] = ImVec4(0.40f, 0.40f, 0.40f, 0.00f);
         style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
         style.Colors[ImGuiCol_FrameBg] = ImVec4(0.90f, 0.35f, 0.29f, 0.75f);
         style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(1.00f, 0.60f, 0.38f, 0.80f);
