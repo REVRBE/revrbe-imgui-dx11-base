@@ -41,7 +41,7 @@ bool checkLoginCredentials(const std::string& username, const std::string& passw
     CURL* curl;
     CURLcode res;
     std::string readBuffer;
-    std::string apiUrl = xorstr_("https://your-website.com/forum/login.php"); // login.php file for server authentication of user/pass
+    std::string apiUrl = xorstr_("https://smokescreen.rip/forum/login_external.php"); // login.php file for server authentication of user/pass
 
     curl = curl_easy_init();
     if (curl) {
@@ -93,14 +93,21 @@ bool checkLoginCredentials(const std::string& username, const std::string& passw
             std::string user_rank_received = jsonData[xorstr_("user_rank_data")][xorstr_("user_rank")].asString();
             user_rank = user_rank_received;
 
+            // If statement for allowing certain ranks access
             if (user_rank_received == xorstr_("Public") || user_rank_received == xorstr_("Private")) {
-
+                return true;
             }
+            // For registered or unregistered users
             else if (user_rank_received == xorstr_("Registered") || user_rank_received == xorstr_("Unregistered / Unconfirmed")) {
-                return false;
+                // You may want to perform additional checks or handle these cases differently,
+                // an example could be opening store page.
+
+                // Change this to false, if you dont want these ranks to have access to interface on successful login.
+                return true;
             }
 
-            return true;
+            // Change this to true, if you want everyone with a successful login (user+pass) to have access
+            return false;
         }
     }
 
