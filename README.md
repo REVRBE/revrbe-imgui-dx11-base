@@ -1,4 +1,4 @@
-# imgui DX11 base with XenForo authentication
+# imgui DX11 base with XenForo/IPB authentication
 
 I really have no interest in updating my DX9 base, so I figured it would probably be better to release one for DX11 - hopefully with future updates to improve and/or add new stuff.
 
