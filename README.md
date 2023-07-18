@@ -12,6 +12,7 @@ I added a simple interface that is displayed on successful login.
 ## Features
 
 ✅ XenForo authentication (returning highest rank with the default login.php)  
+✅ Invision Power Board (IPB forums) authentication, not for free though, HMU on Discord if interested.
 ✅ DragonByte support (returning all licenses; license id, product id and expiry date with the DragonByte login.php file)  
 ✅ Color schemes readded to DX11 base; + remembers last color  
 ✅ TLS/SSL encryption  
